@@ -16,7 +16,7 @@ const (
 type Context any
 
 type InMessage struct {
-	Context Context `json:"context" configurable:"true" required:"true" title:"Context" description:"Arbitrary message to be modified"`
+	Context Context `json:"context" configurable:"true" required:"true" title:"Context" description:"Arbitrary message to be echoed"`
 }
 
 type Component struct {
