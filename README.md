@@ -1,2 +1,2 @@
-# Tiny Systems All-In-One module
-Collection of various components combined into the first module.
+# Tiny Systems Example module
+Example module for the Tiny Systems platform.
