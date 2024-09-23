@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '>=1.23.1'
       - run: |
           echo "Preparing a release"
           echo "Module name ${{ github.event.repository.name }}"
