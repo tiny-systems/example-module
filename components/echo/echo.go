@@ -47,14 +47,13 @@ func (t *Component) Ports() []module.Port {
 		{
 			Name:          InPort,
 			Label:         "In",
-			Source:        true,
 			Configuration: InMessage{},
 			Position:      module.Left,
 		},
 		{
 			Name:          OutPort,
 			Label:         "Out",
-			Source:        false,
+			Source:        true,
 			Configuration: new(Context),
 			Position:      module.Right,
 		},
