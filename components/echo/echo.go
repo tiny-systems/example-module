@@ -3,6 +3,7 @@ package echo
 import (
 	"context"
 	"fmt"
+
 	"github.com/tiny-systems/module/module"
 	"github.com/tiny-systems/module/registry"
 )
@@ -35,7 +36,7 @@ func (t *Component) GetInfo() module.ComponentInfo {
 	}
 }
 
-func (t *Component) Handle(ctx context.Context, handler module.Handler, port string, msg interface{}) error {
+func (t *Component) Handle(ctx context.Context, handler module.Handler, port string, msg interface{}) any {
 	if in, ok := msg.(InMessage); ok {
 		return handler(ctx, OutPort, in.Context)
 	}
