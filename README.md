@@ -1,6 +1,6 @@
-# TinySystems Example Module
+# Tiny Systems Example Module
 
-Template repository for building your own TinySystems module. Fork this repo to get started.
+Template repository for building your own Tiny Systems module. Fork this repo to get started.
 
 ## What's Included
 
@@ -63,8 +63,8 @@ helm install my-module tinysystems/tinysystems-operator \
 - [Developer Guide](https://docs.tinysystems.io/developer-guide/getting-started/hello-world-component) — build your first component
 - [Module SDK](https://github.com/tiny-systems/module) — core library
 - [Component Examples](https://docs.tinysystems.io/examples/components/simple-transformer) — real-world patterns
-- [TinySystems Platform](https://tinysystems.io) — visual editor and module directory
+- [Tiny Systems Platform](https://tinysystems.io) — visual editor and module directory
 
 ## License
 
-This module's source code is MIT-licensed. It depends on the [TinySystems Module SDK](https://github.com/tiny-systems/module) (BSL 1.1). See [LICENSE](LICENSE) for details.
+This module's source code is MIT-licensed. It depends on the [Tiny Systems Module SDK](https://github.com/tiny-systems/module) (BSL 1.1). See [LICENSE](LICENSE) for details.
