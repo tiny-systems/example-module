@@ -62,7 +62,7 @@ helm install my-module tinysystems/tinysystems-operator \
 
 - [Developer Guide](https://docs.tinysystems.io/developer-guide/getting-started/hello-world) — build your first component
 - [Module SDK](https://github.com/tiny-systems/module) — core library
-- [Component Examples](https://docs.tinysystems.io/examples/) — real-world patterns
+- [Component Examples](https://docs.tinysystems.io/examples/components/simple-transformer) — real-world patterns
 - [TinySystems Platform](https://tinysystems.io) — visual editor and module directory
 
 ## License
