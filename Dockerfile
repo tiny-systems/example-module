@@ -1,7 +1,10 @@
 # Build a Tiny Systems module image with no platform involvement.
 # Mirrors the SDK's own build (module/tools/build): golang → distroless static.
 # The module's cmd/main.go IS the controller-manager entrypoint.
-FROM golang:1.25 AS builder
+# Build on the NATIVE runner arch (BUILDPLATFORM) and let Go cross-compile to
+# the target arch — fast, no QEMU emulation. Only the tiny final stage is
+# per-target.
+FROM --platform=$BUILDPLATFORM golang:1.25 AS builder
 ARG TARGETOS
 ARG TARGETARCH
 ARG VERSION
