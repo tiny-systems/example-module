@@ -27,6 +27,7 @@ jobs:
         id: v
         run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
 
+      - uses: docker/setup-qemu-action@v3 # cross-build arm64 on the amd64 runner
       - uses: docker/setup-buildx-action@v3
 
       - name: Log in to GHCR
@@ -40,6 +41,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          platforms: linux/amd64,linux/arm64 # run on Intel + Apple-silicon clusters
           push: true
           tags: |
             ghcr.io/${{ github.repository }}:${{ steps.v.outputs.version }}
